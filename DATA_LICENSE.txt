@@ -1,0 +1,14 @@
+Data licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Applies to the files in data/ and results/ that were created by the author
+(extraction file, screening decisions and logs, effect sizes, result tables).
+
+Notes:
+- Search record files (S2_*) contain only bibliographic metadata (titles, source, rank).
+  The titles belong to their original authors and publishers.
+- Numbers in SOC_extraction_final.csv were taken from published studies; please cite
+  the original studies when reusing them.
+- Original research PDFs are not included.
+
+Copyright (c) 2026 Hussan Afzal

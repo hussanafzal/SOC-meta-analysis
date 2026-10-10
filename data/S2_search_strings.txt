@@ -1,0 +1,38 @@
+﻿S2 Search Strings, Final Versions Used
+
+Search #1, Google Scholar
+String:
+"organic amendment" OR manure OR compost "soil organic carbon" saline OR sodic "field experiment"
+Hit count: ~7,800
+________________
+
+Search #2, Google Scholar
+String:
+manure OR compost OR "crop residue" OR "green manure" "soil organic carbon" arid OR semiarid OR dryland "field experiment"
+Hit count: ~19,800
+________________
+
+Search #3, Google Scholar, 
+String:
+"organic amendments" "soil organic carbon" "salt-affected" OR "saline-sodic" "long-term" OR "field trial"
+Hit count: ~3,530
+Change: Removed calcareous because calcareous soil alone does not mean saline, sodic, or dryland.
+________________
+
+Search #4, CORE
+String:
+(manure OR compost OR "crop residue" OR "green manure" OR "organic amendment") AND "soil organic carbon" AND (arid OR semiarid OR dryland OR saline OR sodic) AND "field experiment"
+Hit count: 66
+________________
+
+Search #5, AGRIS, 
+String:
+organic amendment soil organic carbon saline sodic
+Hit count: 13
+Change: Removed quotation marks because the original search returned 0 results.
+________________
+
+Search #6, AGRIS, 
+String:
+manure compost organic carbon arid
+Hit count: 48

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Effect of manure on soil organic carbon concentration in dryland and saline soils: a small descriptive meta-analysis of 4 field studies"
+authors:
+  - family-names: Afzal
+    given-names: Hussan
+    orcid: "https://orcid.org/0009-0008-0990-4248"
+version: 1.0.0
+license: MIT

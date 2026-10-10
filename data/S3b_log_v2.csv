@@ -1,0 +1,16 @@
+Record_ID,Decision,Reason,Notes
+ID_033,Include,MEETS_ALL,"Semi-arid saline-sodic, manure 14 to 30 yr, SOC 0 to 20 cm in Fig 1 (digitize), SD n=3. Confirm CK fertilizer."
+ID_036,Exclude,NO_CTRL,"All plots fertilized, no unamended control. Depth 0 to 25 cm, one season, gypsum added."
+ID_041,Include,MEETS_ALL,"Saline-alkali, 3 yr, sheep manure/straw/grass vs same-fertilizer CK, SOC Table 3 mean±SD, n=3. Shared control."
+ID_101,Include,MEETS_ALL,"Dryland AI 0.39, 30 yr. Pair FYM vs CK and NP+FYM vs NP. SOC Fig 3B (digitize). Check SD or SE."
+ID_102,Include,MEETS_ALL,"Arid, vetch green manure vs fallow at same N rate, 5 yr. SOC 0 to 20 cm Fig 5 SE, n=3."
+ID_108,Exclude,WRONG_DEPTH,"Sampled 0 to 30 cm, SOC only as organic matter graph, no variance."
+ID_121,Exclude,NO_VARIANCE,"Fig 3 SOC stock dots only, no error bars or SD/SE reported."
+ID_125,Exclude,WRONG_OUTCOME,SOC stock only; registered primary outcome is SOC concentration.
+ID_141,Exclude,NOT_FIELD,Reconstituted soil-manure mix is not a field experiment; variance also unspecified.
+ID_179,Include,MEETS_ALL,"Semiarid Alfisol, 27 yr, Table 3 mean±SD n=4. FYM vs control, FYM+NPK vs NPK."
+ID_184,Include,MEETS_ALL,"Semi-arid, 18 yr, Table I SOC 0 to 20 cm mean±SD, n=4. FYM vs unfertilized control."
+ID_196,Include,MEETS_ALL,"Arid, 23 yr, Table 1 SOC 0 to 20 cm, n=3. M vs CK. Check SD/SE."
+ID_264,Exclude,NOT_FIELD,Lab incubation with straw biochar. Not a field experiment.
+ID_276,Include,MEETS_ALL,"Authors' saline-alkali label, EC low. NPK vs NPK+organic fertilizer/straw, Fig 2f. Drop biochar."
+ID_382,Exclude,NO_VARIANCE,Unreplicated plots give n=1; no valid variance estimate.

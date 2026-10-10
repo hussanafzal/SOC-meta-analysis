@@ -1,0 +1,16 @@
+"effect_id","amend_type","soil_type","duration_group","pct"
+"041_1","manure","saline_sodic","1to3",102.4
+"041_2","residue","saline_sodic","1to3",24.8
+"041_3","green_manure","saline_sodic","1to3",20.6
+"041_4","residue","saline_sodic","1to3",151.7
+"184_3","manure",NA,"gt3",80
+"179_2","manure",NA,"gt3",34
+"196_2","manure",NA,"gt3",42.1
+"196_3","manure",NA,"gt3",56.7
+"196_4","manure",NA,"gt3",57.4
+"102_1","green_manure",NA,"gt3",6.9
+"102_2","green_manure",NA,"gt3",6.8
+"102_3","green_manure",NA,"gt3",4.6
+"101_2","manure",NA,"gt3",37.3
+"033_1","manure","saline_sodic","gt3",70.9
+"033_2","manure","saline_sodic","gt3",101.4
