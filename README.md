@@ -4,7 +4,9 @@ Small, descriptive, preregistered meta-analysis.
 
 **OSF registration:** https://doi.org/10.17605/OSF.IO/F784B (registered 05 Oct 2026)
 
-**Preprint:** To be added after upload.
+**Zenodo release DOI:** https://doi.org/10.5281/zenodo.23283039
+
+**Preprint:** Not yet published.
 
 ## How to reproduce
 
