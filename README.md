@@ -69,16 +69,16 @@ Study 276 passed full-text inclusion but was excluded at extraction (no variance
 
 ## Screening and analysis notes
 
-* Eight records (IDs 317, 319, 324, 330, 334, 349, 350, 360) had no title in the source and could not be screened. Therefore, 349 of the 357 non-duplicate records had titles available for screening. These eight records are marked Unsure in `S2_StageA_screening.csv` and Possible (Wave 3) in `S3_title_screen.csv`.
+* Eight records (IDs 317, 319, 324, 330, 334, 349, 350, 360) had no title in the source and could not be screened. Therefore, 349 of the 357 non-duplicate records had titles available for screening. These eight records are marked Unsure in `S2_StageA_screening.csv` and Possible (Wave 3) in `S3_title_screen.csv`. 94 records were excluded at title screening. 263 records were carried forward.
 * A total of 232 records were not assessed at full text: Wave 2 = 23, Wave 3 = 68, and B-low = 141.
 * Study 276 passed full-text inclusion but was excluded during extraction because variance data were unavailable. Seven studies contributed to the analysis.
 * For studies 101 and 196, the reported variance type was unclear. The main analysis treats these values as SD; sensitivity analyses treat them as SE (study 101 alone, then studies 196 and 101 together).
 * The two comparison sets are analysed separately:
 
-  * Manure versus unamended control: 4 studies and 5 effect-size rows.
-  * Amendment plus fertilizer versus the same fertilizer alone: 7 studies and 15 effect-size rows.
+  * Manure vs unamended: 4 studies, 5 rows, +51.4% (95% CI, z based: 38.4 to 65.6; t based: 33.3 to 71.9)
+  * Manure with matched fertilizer: 7 studies, 15 rows, +47.9% (95% CI, z based: 25.7 to 74.1; t based: 23.7 to 76.8)
 * Results include z-based confidence intervals (the metafor default for the registered model) and t-based confidence intervals as a small-sample check.
-* No subgroup test was run, because no subgroup had 3 or more studies per level. The script still prints a subgroup eligibility check. The `soil_type` table for the pooled set prints empty because soil type is missing for all 4 studies in it (EC and ESP were not reported), and the eligibility result is `FALSE`. This is expected, not an error.
+* No subgroup test was run, because no subgroup had 3 or more studies per level. The script still prints a subgroup eligibility check. The `soil_type` table for the pooled set prints empty because soil type is missing for all 4 studies in it (EC and ESP were not reported), and the eligibility result is `FALSE`. This is expected, not an error. No SOC stock analysis and no Egger test were run (fewer studies than the registered thresholds).
 * Study identifiers appear in different formats across files, including `101`, `ID_101`, and `101_1`. The R output files in `results/` write study IDs as plain numbers without leading zeros (for example `41` and `33` for studies 041 and 033). A study ID is the same number as its `Record_ID` in the screening files (for example, study 101 is record 101). Effect IDs such as `101_1` are comparison rows within a study.
 
 ## Registration and timeline
