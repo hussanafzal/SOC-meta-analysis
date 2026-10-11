@@ -10,7 +10,7 @@ Small, descriptive, preregistered meta-analysis.
 
 **Zenodo (cite all versions) DOI:** https://doi.org/10.5281/zenodo.23283038 (always resolves to the latest version)
 
-**This release (v1.0.1) DOI:** assigned when the v1.0.1 record is published; see the Zenodo record
+**This release (v1.0.1) DOI:** https://doi.org/10.5281/zenodo.23306490
 
 **Earlier release (v1.0.0) DOI:** https://doi.org/10.5281/zenodo.23283039
 
