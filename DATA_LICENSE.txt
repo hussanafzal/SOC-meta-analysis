@@ -5,8 +5,9 @@ Applies to the files in data/ and results/ that were created by the author
 (extraction file, screening decisions and logs, effect sizes, result tables).
 
 Notes:
-- Search record files (S2_*) contain only bibliographic metadata (titles, source, rank).
-  The titles belong to their original authors and publishers.
+- The search and screening files (S2a_ to S2d_, and the title columns in S3a_ and S3b_)
+  contain bibliographic metadata (titles, source, rank). Those titles belong to their
+  original authors and publishers.
 - Numbers in SOC_extraction_final.csv were taken from published studies; please cite
   the original studies when reusing them.
 - Original research PDFs are not included.

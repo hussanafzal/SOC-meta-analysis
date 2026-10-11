@@ -1,5 +1,5 @@
 # ============================================================
-# SOC meta analysis: manure and other organic amendments
+# SOC meta analysis: manure and other organic amendments (v1.0.1: t based CI uses study level df)
 # Run from the repo root folder (the one that contains data/ and R/)
 # Needs: metafor  (install.packages("metafor"))
 # ============================================================
@@ -29,7 +29,9 @@ make_es <- function(d, unclear_as = "SD") {
 }
 es <- make_es(dat, unclear_as = "SD")      # main run
 
-# Cross check against metafor's own lnRR (differences should be ~0)
+# Cross check against metafor's own lnRR. vi must match exactly (difference 0).
+# yi can differ by up to ~0.004 because escalc adds a small second order bias
+# correction to lnRR: 0.5 * (sd_t^2/(n_t*mean_t^2) - sd_c^2/(n_c*mean_c^2)).
 chk <- escalc(measure = "ROM", m1i = mean_t, sd1i = sd_t, n1i = n_t,
               m2i = mean_c, sd2i = sd_c, n2i = n_c, data = es)
 max(abs(chk$yi - es$yi)); max(abs(chk$vi - es$vi))
@@ -41,9 +43,13 @@ pooled$pct <- round((exp(pooled$yi) - 1) * 100, 1)
 fert$pct   <- round((exp(fert$yi)   - 1) * 100, 1)
 
 # ---- STEP 3: MAIN MODELS (registered model) ----
+# test = "z": registered model (z based CI).
+# test = "t": small sample check. dfs = "contain" uses study level df
+# (number of studies minus 1), which is right for so few studies.
 fit_mv <- function(d, test = "z")
   rma.mv(yi, vi, random = ~ 1 | study_id/effect_id,
-         data = d, method = "REML", test = test)
+         data = d, method = "REML", test = test,
+         dfs = ifelse(test == "t", "contain", "residual"))
 
 m_pool <- fit_mv(pooled)                   # headline: manure vs unamended
 m_fert <- fit_mv(fert)                     # separate: fert_only
@@ -116,10 +122,13 @@ write.csv(es[, c("study_id","effect_id","author_year","control_type","amend_type
                  "var_type","mean_c","mean_t","sd_c","sd_t","n_c","n_t","yi","vi")],
           "results/S6_effect_sizes.csv", row.names = FALSE)
 
-# 2. Main results: ONE row per set (estimate, both CIs, tau2, Q, I2)
+# 2. Main results: ONE row per set (estimate, both CIs, prediction interval, tau2, Q, I2)
 main_row <- function(m, d, set) {
   r <- fit_row(d, set, "MAIN")[, c("set","k","studies","lnRR","pct",
                                    "lo_z","hi_z","lo_t","hi_t")]
+  # 95% prediction interval (t based, study level df), percent change
+  pr <- predict(fit_mv(d, "t"), transf = pc)
+  r$pi_lo <- round(pr$pi.lb, 1); r$pi_hi <- round(pr$pi.ub, 1)
   cbind(r, as.data.frame(t(round(het(m, d), 4))))
 }
 write.csv(rbind(main_row(m_pool, pooled, "pooled"),

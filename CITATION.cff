@@ -1,9 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
-title: "Effect of manure on soil organic carbon concentration in dryland and saline soils: a small descriptive meta-analysis of 4 field studies"
+title: "Effect of manure on soil organic carbon concentration in dryland soils: a small descriptive meta-analysis of 4 field studies, with a 7-study fertilizer-matched analysis"
 authors:
   - family-names: Afzal
     given-names: Hussan
     orcid: "https://orcid.org/0009-0008-0990-4248"
-version: 1.0.0
+version: 1.0.1
+date-released: 2026-10-12
+doi: 10.5281/zenodo.23283038
 license: MIT
+repository-code: "https://github.com/hussanafzal/SOC-meta-analysis"
