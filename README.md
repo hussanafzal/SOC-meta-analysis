@@ -14,7 +14,7 @@ Small, descriptive, preregistered meta-analysis.
 
 **Earlier release (v1.0.0) DOI:** https://doi.org/10.5281/zenodo.23283039
 
-**Preprint:** Not yet published.
+**Preprint:** https://doi.org/10.5281/zenodo.23306828
 
 ## How to reproduce
 
